@@ -8,7 +8,7 @@ const info = [
   },
   {
     'name': 'John Doe',
-    'message': 'Hello, whats up',
+    'message': 'Hello, whats up 👋',
     'time': '2:25 pm',
     'profilePic':
         'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -121,7 +121,7 @@ const info = [
   },
   {
     'name': 'Pauline Macejkovic',
-    'message': '😂😂',
+    'message': '😂',
     'time': 'Yesterday at 2:55pm',
     'profilePic':
         'https://images.unsplash.com/photo-1589156288859-f0cb0d82b065?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
@@ -163,7 +163,7 @@ const info = [
   },
   {
     'name': 'Jessica Park',
-    'message': '',
+    'message': '👀👀',
     'time': 'Yesterday at 12:36 pm',
     'profilePic':
         'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80',
@@ -212,7 +212,7 @@ const info = [
   },
   {
     'name': 'Tressie Jakubowski',
-    'message': '',
+    'message': 'Are u a Daredevil 😈???',
     'time': '20/03/2022',
     'profilePic':
         'https://images.unsplash.com/photo-1532675432006-329c6fed7045?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80',
@@ -233,7 +233,7 @@ const info = [
   },
   {
     'name': 'Karolína Kozelová',
-    'message': '',
+    'message': 'Awesome 🤩😍',
     'time': '20/03/2022',
     'profilePic':
         'https://images.unsplash.com/photo-1589696709084-5d65d0343dd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',

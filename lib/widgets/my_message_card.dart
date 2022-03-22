@@ -38,7 +38,7 @@ class MyMessageCard extends StatelessWidget {
                   ),
                   child: Text(
                     message,
-                    style: TextStyle(fontSize: 16),
+                    style: TextStyle(fontSize: 14),
                   ),
                 ),
                 Positioned(
@@ -49,11 +49,11 @@ class MyMessageCard extends StatelessWidget {
                       Text(
                         date,
                         style: const TextStyle(
-                            fontSize: 13, color: Colors.white60),
+                            fontSize: 12, color: Colors.white60),
                       ),
                       const SizedBox(width: 5),
                       const Icon(Icons.done_all,
-                          size: 20, color: Colors.white60),
+                          size: 18, color: Colors.lightBlue),
                     ],
                   ),
                 ),
