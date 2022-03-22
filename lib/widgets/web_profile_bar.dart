@@ -7,8 +7,8 @@ class WebProfileBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height * 0.077,
-      width: MediaQuery.of(context).size.width * 0.25,
+      height: 55,
+      width: MediaQuery.of(context).size.width * 0.3,
       padding: const EdgeInsets.all(10),
       decoration: const BoxDecoration(
         border: Border(
@@ -27,10 +27,21 @@ class WebProfileBar extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: Icon(
-              Icons.comment,
+              Icons.data_usage,
               color: Colors.grey,
             ),
           ),
+          Divider(indent: 7.5),
+          IconButton(
+            onPressed: () {},
+            padding: EdgeInsets.only(bottom: 0, top: 2),
+            icon: Icon(
+              Icons.add,
+              size: 30,
+              color: Colors.grey,
+            ),
+          ),
+          Divider(indent: 7.5),
           IconButton(
             onPressed: () {},
             icon: Icon(

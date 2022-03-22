@@ -5,6 +5,7 @@ import 'package:whatsapp_clone_ui/widgets/contacts_list.dart';
 import 'package:whatsapp_clone_ui/widgets/web_chat_app_bar.dart';
 import 'package:whatsapp_clone_ui/widgets/web_profile_bar.dart';
 import 'package:whatsapp_clone_ui/widgets/web_search_bar.dart';
+import 'dart:math';
 
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
@@ -26,8 +27,13 @@ class WebScreenLayout extends StatelessWidget {
               ),
             ),
           ),
+          VerticalDivider(
+            color: dividerColor,
+            thickness: 1.0,
+            width: 1,
+          ),
           Container(
-            width: MediaQuery.of(context).size.width * 0.75,
+            width: MediaQuery.of(context).size.width * 0.7,
             decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/backgroundImage.png'),
@@ -41,8 +47,8 @@ class WebScreenLayout extends StatelessWidget {
                   child: ChatList(),
                 ),
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.07,
-                  padding: const EdgeInsets.all(10),
+                  height: 65,
+                  padding: const EdgeInsets.all(9.25),
                   decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(
@@ -55,6 +61,7 @@ class WebScreenLayout extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () {},
+                        splashRadius: 25,
                         icon: Icon(
                           Icons.emoji_emotions_outlined,
                           color: Colors.grey,
@@ -62,9 +69,13 @@ class WebScreenLayout extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
-                          Icons.attach_file,
-                          color: Colors.grey,
+                        splashRadius: 25,
+                        icon: Transform.rotate(
+                          angle: 315 * pi / 180,
+                          child: Icon(
+                            Icons.attach_file,
+                            color: Colors.grey,
+                          ),
                         ),
                       ),
                       Expanded(
@@ -76,7 +87,7 @@ class WebScreenLayout extends StatelessWidget {
                               filled: true,
                               hintText: 'Type a message',
                               border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(20),
+                                borderRadius: BorderRadius.circular(8.25),
                                 borderSide: const BorderSide(
                                   width: 0,
                                   style: BorderStyle.none,
@@ -89,10 +100,12 @@ class WebScreenLayout extends StatelessWidget {
                       ),
                       IconButton(
                         onPressed: () {},
+                        splashRadius: 25,
                         icon: Icon(
-                          Icons.mic,
+                          Icons.mic_none,
                           color: Colors.grey,
                         ),
+                        padding: const EdgeInsets.only(right: 10),
                       ),
                     ],
                   ),
