@@ -20,8 +20,8 @@ class WebProfileBar extends StatelessWidget {
         children: [
           const CircleAvatar(
             backgroundImage: NetworkImage(
-                'https://upload.wikimedia.org/wikipedia/commons/8/85/Elon_Musk_Royal_Society_%28crop1%29.jpg'),
-            radius: 20,
+                'https://images.unsplash.com/photo-1647413191942-4d4b19df8735?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80'),
+            radius: 35,
           ),
           Spacer(),
           IconButton(
