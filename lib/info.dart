@@ -79,35 +79,35 @@ const info = [
   {
     'name': 'Hamlet Dörschner',
     'message': 'Have u heard about what happened to Leo?',
-    'time': 'Yesterday at 10:48 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1643574914412-409598704135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
     'name': 'Simón Fierro Hijo',
     'message': 'Got it! 👍',
-    'time': 'Yesterday at 7:11 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1647199140222-579de80e6bb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80',
   },
   {
     'name': 'Lola Dupont',
     'message': 'Why????',
-    'time': 'Yesterday at 7:02 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1481824429379-07aa5e5b0739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=696&q=80',
   },
   {
     'name': 'Magdalena Oliva Gaytán Soto',
     'message': 'Image',
-    'time': 'Yesterday at 6:16 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
   {
     'name': 'Lukas Christiaens',
     'message': 'Thats crazy!',
-    'time': 'Yesterday at 4:39 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1647831570034-51d43eac0694?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
@@ -115,84 +115,84 @@ const info = [
     'name': 'Karl Bruhn Bentsen',
     'message':
         'Just wanted to let u know, that u are gonna be holding the meeting in two days. Be ready!',
-    'time': 'Yesterday at 4:25 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80',
   },
   {
     'name': 'Pauline Macejkovic',
     'message': '😂',
-    'time': 'Yesterday at 2:55pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1589156288859-f0cb0d82b065?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80',
   },
   {
     'name': 'Nomfundo Blignaut',
     'message': "Don't forget the birthday next week!",
-    'time': 'Yesterday at 1:36 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
     'name': 'Maxie Tremblay',
     'message': 'Is it be possible that u could help me this Weekend?',
-    'time': 'Yesterday at 1:23 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1523464862212-d6631d073194?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
     'name': 'Line Bjerre',
     'message': 'Wdym?',
-    'time': 'Yesterday at 1:04 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=761&q=80',
   },
   {
     'name': 'Elias Boyer',
     'message': '',
-    'time': 'Yesterday at 12:50 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1143&q=80',
   },
   {
     'name': 'Reine Berg',
     'message': '',
-    'time': 'Yesterday at 12:41 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
   {
     'name': 'Jessica Park',
     'message': '👀👀',
-    'time': 'Yesterday at 12:36 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80',
   },
   {
     'name': 'Richard Fejfar',
     'message': '',
-    'time': 'Yesterday at 12:18 pm',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
   },
   {
     'name': 'Sally McLaughlin',
     'message': '',
-    'time': 'Yesterday at 11:09 am',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
     'name': 'Dr. Mohammed Yousaf',
     'message': '',
-    'time': 'Yesterday at 7:51 am',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
   },
   {
     'name': 'Görel Mårtensson',
     'message': '',
-    'time': 'Yesterday at 7:26 am',
+    'time': 'Yesterday',
     'profilePic':
         'https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=766&q=80',
   },

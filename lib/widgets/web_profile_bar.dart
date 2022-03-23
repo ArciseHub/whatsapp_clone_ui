@@ -25,6 +25,7 @@ class WebProfileBar extends StatelessWidget {
           ),
           Spacer(),
           IconButton(
+            splashRadius: 25,
             onPressed: () {},
             icon: Icon(
               Icons.data_usage,
@@ -33,6 +34,7 @@ class WebProfileBar extends StatelessWidget {
           ),
           Divider(indent: 7.5),
           IconButton(
+            splashRadius: 25,
             onPressed: () {},
             padding: EdgeInsets.only(bottom: 0, top: 2),
             icon: Icon(
@@ -43,6 +45,7 @@ class WebProfileBar extends StatelessWidget {
           ),
           Divider(indent: 7.5),
           IconButton(
+            splashRadius: 25,
             onPressed: () {},
             icon: Icon(
               Icons.more_vert,

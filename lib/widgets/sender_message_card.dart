@@ -10,7 +10,8 @@ class SenderMessageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 110),
+      padding:
+          EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.0575),
       child: Align(
         alignment: Alignment.centerLeft,
         child: ConstrainedBox(

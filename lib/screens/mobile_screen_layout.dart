@@ -10,7 +10,7 @@ class MobileScreenLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
         backgroundColor: appBarColor,
         appBar: AppBar(
@@ -26,6 +26,7 @@ class MobileScreenLayout extends StatelessWidget {
           centerTitle: false,
           actions: [
             IconButton(
+              splashRadius: 25,
               onPressed: () {},
               icon: Icon(
                 Icons.search,
@@ -33,6 +34,7 @@ class MobileScreenLayout extends StatelessWidget {
               ),
             ),
             IconButton(
+              splashRadius: 25,
               onPressed: () {},
               icon: Icon(
                 Icons.more_vert,
@@ -49,6 +51,7 @@ class MobileScreenLayout extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
             tabs: [
+              Tab(icon: Icon(Icons.camera_alt)),
               Tab(text: 'CHATS'),
               Tab(text: 'STATUS'),
               Tab(text: 'CALL'),
