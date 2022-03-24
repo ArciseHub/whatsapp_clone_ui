@@ -1,12 +1,12 @@
+import 'dart:convert';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone_ui/colors.dart';
 import 'package:whatsapp_clone_ui/info.dart';
-import 'package:whatsapp_clone_ui/screens/mobile_chat_screen.dart';
 
-class ContactsList extends StatelessWidget {
-  const ContactsList({Key? key}) : super(key: key);
+class CallList extends StatelessWidget {
+  const CallList({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -17,10 +17,7 @@ class ContactsList extends StatelessWidget {
         return Column(
           children: [
             InkWell(
-              onTap: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                    builder: (context) => const MobileChatScreen()));
-              },
+              onTap: () {},
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
                 child: ListTile(
@@ -30,45 +27,45 @@ class ContactsList extends StatelessWidget {
                         child: Text(
                           info[index]['name'].toString(),
                           style: TextStyle(fontSize: 18),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          softWrap: false,
                         ),
                       ),
                     ],
                   ),
-                  subtitle: Row(
-                    children: [
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(top: 4.0),
-                          child: Text(
-                            info[index]['message'].toString(),
-                            style: TextStyle(fontSize: 14),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            softWrap: false,
+                  subtitle: Padding(
+                    padding: const EdgeInsets.only(top: 4.0),
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 4.0),
+                          child: Icon(
+                            (info[index]['callMade'].toString() == 'me')
+                                ? Icons.call_made
+                                : Icons.call_received,
+                            color: (info[index]['callMade'].toString() == 'me')
+                                ? Colors.greenAccent
+                                : Colors.redAccent,
+                            size: 15,
                           ),
                         ),
-                      ),
-                    ],
+                        Expanded(
+                          child: Text(
+                            info[index]['call'].toString(),
+                            style: TextStyle(fontSize: 14),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   leading: CircleAvatar(
                     backgroundImage:
                         NetworkImage(info[index]['profilePic'].toString()),
                     radius: 30,
                   ),
-                  trailing: Column(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(top: 10),
-                        child: Text(
-                          info[index]['time'].toString(),
-                          style: TextStyle(fontSize: 13, color: Colors.grey),
-                        ),
-                      ),
-                    ],
-                  ),
+                  trailing: Icon(
+                      (info[index]['callKind'].toString() == 'phone')
+                          ? Icons.call
+                          : Icons.videocam,
+                      color: tabColor),
                 ),
               ),
             ),

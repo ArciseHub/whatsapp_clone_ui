@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone_ui/colors.dart';
 
@@ -16,6 +18,7 @@ class WebSearchBar extends StatelessWidget {
         ),
       ),
       child: TextField(
+        onTap: () {},
         decoration: InputDecoration(
           filled: true,
           fillColor: searchBarColor,
