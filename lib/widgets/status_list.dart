@@ -12,7 +12,7 @@ class StatusList extends StatelessWidget {
     return ListView.builder(
       controller: ScrollController(),
       shrinkWrap: true,
-      itemCount: info.length,
+      itemCount: status.length,
       itemBuilder: (context, index) {
         return Column(
           children: [
@@ -25,7 +25,7 @@ class StatusList extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          info[index]['name'].toString(),
+                          status[index]['name'].toString(),
                           style: TextStyle(fontSize: 18),
                         ),
                       ),
@@ -33,7 +33,7 @@ class StatusList extends StatelessWidget {
                   ),
                   leading: CircleAvatar(
                     backgroundImage:
-                        NetworkImage(info[index]['profilePic'].toString()),
+                        NetworkImage(status[index]['profilePic'].toString()),
                     radius: 30,
                   ),
                   subtitle: Row(
@@ -41,7 +41,7 @@ class StatusList extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(top: 4.0),
                         child: Text(
-                          info[index]['time'].toString(),
+                          status[index]['time'].toString(),
                           style: TextStyle(fontSize: 14),
                         ),
                       ),

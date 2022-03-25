@@ -12,7 +12,7 @@ class CallList extends StatelessWidget {
     return ListView.builder(
       controller: ScrollController(),
       shrinkWrap: true,
-      itemCount: info.length,
+      itemCount: call.length,
       itemBuilder: (context, index) {
         return Column(
           children: [
@@ -25,7 +25,7 @@ class CallList extends StatelessWidget {
                     children: [
                       Expanded(
                         child: Text(
-                          info[index]['name'].toString(),
+                          call[index]['name'].toString(),
                           style: TextStyle(fontSize: 18),
                         ),
                       ),
@@ -38,10 +38,10 @@ class CallList extends StatelessWidget {
                         Padding(
                           padding: const EdgeInsets.only(right: 4.0),
                           child: Icon(
-                            (info[index]['callMade'].toString() == 'me')
+                            (call[index]['callMade'].toString() == 'me')
                                 ? Icons.call_made
                                 : Icons.call_received,
-                            color: (info[index]['callMade'].toString() == 'me')
+                            color: (call[index]['callMade'].toString() == 'me')
                                 ? Colors.greenAccent
                                 : Colors.redAccent,
                             size: 15,
@@ -49,7 +49,7 @@ class CallList extends StatelessWidget {
                         ),
                         Expanded(
                           child: Text(
-                            info[index]['call'].toString(),
+                            call[index]['call'].toString(),
                             style: TextStyle(fontSize: 14),
                           ),
                         ),
@@ -58,11 +58,11 @@ class CallList extends StatelessWidget {
                   ),
                   leading: CircleAvatar(
                     backgroundImage:
-                        NetworkImage(info[index]['profilePic'].toString()),
+                        NetworkImage(call[index]['profilePic'].toString()),
                     radius: 30,
                   ),
                   trailing: Icon(
-                      (info[index]['callKind'].toString() == 'phone')
+                      (call[index]['callKind'].toString() == 'phone')
                           ? Icons.call
                           : Icons.videocam,
                       color: tabColor),

@@ -2,6 +2,9 @@ import 'dart:html';
 
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone_ui/colors.dart';
+import 'package:whatsapp_clone_ui/screens/pages/call_page.dart';
+import 'package:whatsapp_clone_ui/screens/pages/chat_page.dart';
+import 'package:whatsapp_clone_ui/screens/pages/status_page.dart';
 import 'package:whatsapp_clone_ui/widgets/call_list.dart';
 import 'package:whatsapp_clone_ui/widgets/contacts_list.dart';
 import 'package:whatsapp_clone_ui/widgets/status_list.dart';
@@ -76,20 +79,20 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
           child: TabBarView(
             children: [
               ContactsList(),
-              ContactsList(),
-              StatusList(),
-              CallList(),
+              ChatPage(),
+              StatusPage(),
+              CallPage(),
             ],
           ),
         ),
-        floatingActionButton: FloatingActionButton(
+        /* floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: tabColor,
-          child: const Icon(
+          child: Icon(
             Icons.comment,
             color: Colors.white,
           ),
-        ),
+        ), */
       ),
     );
   }
