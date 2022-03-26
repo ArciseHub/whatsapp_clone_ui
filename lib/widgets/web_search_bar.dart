@@ -17,29 +17,27 @@ class WebSearchBar extends StatelessWidget {
           bottom: BorderSide(color: dividerColor),
         ),
       ),
-      child: GestureDetector(
-        child: TextField(
-          decoration: InputDecoration(
-            filled: true,
-            fillColor: searchBarColor,
-            prefixIcon: const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Icon(
-                Icons.search,
-                size: 20,
-              ),
+      child: TextField(
+        decoration: InputDecoration(
+          filled: true,
+          fillColor: searchBarColor,
+          prefixIcon: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Icon(
+              Icons.search,
+              size: 20,
             ),
-            hintStyle: const TextStyle(fontSize: 14),
-            hintText: 'Search or start new chat',
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(8.25),
-              borderSide: const BorderSide(
-                width: 0,
-                style: BorderStyle.none,
-              ),
-            ),
-            contentPadding: const EdgeInsets.all(10),
           ),
+          hintStyle: const TextStyle(fontSize: 14),
+          hintText: 'Search or start new chat',
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8.25),
+            borderSide: const BorderSide(
+              width: 0,
+              style: BorderStyle.none,
+            ),
+          ),
+          contentPadding: const EdgeInsets.all(10),
         ),
       ),
     );
